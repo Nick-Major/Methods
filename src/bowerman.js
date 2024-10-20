@@ -5,6 +5,3 @@ export class Bowerman extends Character {
 		super(name, "Bowman", 100, 1, 25, 25)
 	}
 }
-
-// let bowerman = new Bowerman("Лучник");
-// console.log(bowerman);

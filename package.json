@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "webpack --mode production",
-    "test": "jest",
+    "test": "jest --coverage",
     "start": "webpack serve --mode development",
     "lint": "eslint ."
   },
