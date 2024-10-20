@@ -23,21 +23,19 @@ export class Character {
 		}
 		
 	}
+
+	levelUp() {
+		if (this.health !== 0) {
+			this.level += 1;
+			this.attack *= 1.2;
+			this.defence *= 1.2;
+			this.health = 100;
+		}
+	}
+
+	damage(points) {
+		if(this.health >= 0) {
+			this.health -= points * (1 - this.defence / 100);
+		}
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let player = new Character("Игрок", "Swordsman", 100, 1, 40, 10);
-console.log(player);
